@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=3 uid="uid://c1bdvf3peh818"]
+
+[ext_resource type="PackedScene" uid="uid://cdeve6utvyg4x" path="res://objects/player.tscn" id="1_fh4iv"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2hhgk"]
+size = Vector2(716, 40)
+
+[node name="world" type="Node2D"]
+
+[node name="platform" type="StaticBody2D" parent="."]
+position = Vector2(309, 475)
+
+[node name="sprite" type="ColorRect" parent="platform"]
+offset_left = -75.0
+offset_right = 641.0
+offset_bottom = 40.0
+color = Color(0.839216, 0.862745, 1, 1)
+
+[node name="mask" type="CollisionShape2D" parent="platform"]
+position = Vector2(283, 20)
+shape = SubResource("RectangleShape2D_2hhgk")
+
+[node name="player" parent="." instance=ExtResource("1_fh4iv")]
+position = Vector2(371, 402)
