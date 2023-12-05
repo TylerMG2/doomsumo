@@ -1,0 +1,26 @@
+[gd_resource type="SpriteFrames" load_steps=5 format=3 uid="uid://bl8jtqywb6fi0"]
+
+[ext_resource type="Texture2D" uid="uid://bi4avmc6cqitf" path="res://sprites/player/doom_idle1.png" id="1_l2xbo"]
+[ext_resource type="Texture2D" uid="uid://bj3ggvu75y42a" path="res://sprites/player/doom_idle2.png" id="2_jveo5"]
+[ext_resource type="Texture2D" uid="uid://oho54i611g4k" path="res://sprites/player/doom_idle3.png" id="3_g1ykc"]
+[ext_resource type="Texture2D" uid="uid://dhf3hyupcsahe" path="res://sprites/player/doom_idle4.png" id="4_1xyyj"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_l2xbo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_jveo5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_g1ykc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_1xyyj")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]

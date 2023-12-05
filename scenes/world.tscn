@@ -9,6 +9,7 @@ size = Vector2(716, 40)
 
 [node name="platform" type="StaticBody2D" parent="."]
 position = Vector2(309, 475)
+scale = Vector2(2, 1)
 
 [node name="sprite" type="ColorRect" parent="platform"]
 offset_left = -75.0
