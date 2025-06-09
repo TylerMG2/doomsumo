@@ -54,6 +54,21 @@
               };
               cargoHash = "sha256-FrnCmfSRAePZuWLC1/iRJ87CwLtgWRpbk6nJLyQQIT8=";
             })
+
+            # Matchbox server for wasm
+            (rustPlatform.buildRustPackage {
+              pname = "matchbox-server";
+              version = "0.12.0";
+              src = pkgs.fetchFromGitHub {
+                owner = "johanhelsing";
+                repo = "matchbox";
+                rev = "v0.12.0";
+                sha256 = "sha256-zyA7qkBFuIEL+jxnfRzt82kEl/P5xIRySA3V0Qv2cN0=";
+              };
+              cargoBuildFlags = ["-p" "matchbox_server"];
+              doCheck = false;
+              cargoHash = "sha256-sbcZWLEgRga4iYiB2lBlZsztNjQzWWEIJHfzHovw3wU=";
+            })
           ];
           shellHook = ''
             echo "Welcome to the doomsumo development shell"
